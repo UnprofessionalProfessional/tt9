@@ -32,11 +32,11 @@ _If your phone does not have Google Play and it does not allow installing custom
 - A hardware keypad or a keyboard. For touchscreen-only devices, an on-screen keypad can be activated from the Settings.
 - Storage space depends on the Android version. The lite version requires at least 4-7 Mb and the full version requires at least 130 Mb.
 - Extra storage space is necessary for language dictionaries in Predictive Mode.
-    - Languages with character predictions only (Korean): ~1 Mb per language
-    - Very small languages (< 100k words; Kiswahili, Indonesian, Vietnamese): 5-6 Mb per language.
-    - Small languages (100k-400k words; e.g. English, Norwegian, Swedish, Finnish, German, French): 15-30 Mb per language.
-    - Medium languages (400k-800k words; e.g. Danish, Greek, Italian, Portuguese): 40-75 Mb per language
-    - Large languages (800k-1.5M words; e.g. Arabic, Bulgarian, Hebrew, Romanian, Spanish): 100-165 Mb per language
+  - Languages with character predictions only (Korean): ~1 Mb per language
+  - Very small languages (< 100k words; Kiswahili, Indonesian, Vietnamese): 5-6 Mb per language.
+  - Small languages (100k-400k words; e.g. English, Norwegian, Swedish, Finnish, German, French): 15-30 Mb per language.
+  - Medium languages (400k-800k words; e.g. Danish, Greek, Italian, Portuguese): 40-75 Mb per language
+  - Large languages (800k-1.5M words; e.g. Arabic, Bulgarian, Hebrew, Romanian, Spanish): 100-165 Mb per language
 
 _Storage usage for the dictionaries depends on the word root count and the average word length in each language. Some languages will require more space, even if they have fewer words than others._
 
@@ -50,6 +50,7 @@ Compatibility has been verified only on the following devices:
 - Qin F21 Pro+ (Android 11)
 - Energizer H620SEU (Android 10)
 - Sonim XP3800 (Android 8.1)
+- Sonim XP3plus/XP3900 (Android 11)
 - Vodaphone VFD 500 (Android 6.0)
 
 ## 🤔 How to Use Traditional T9?
@@ -89,3 +90,12 @@ Thank you for understanding, and enjoy TT9!
 - The dictionaries are licensed under the licenses provided in the [respective readme files](docs/dictionaries), where applicable. Detailed information about the dictionaries is also available there.
 - [Silver foil photo created by rawpixel.com - www.freepik.com](https://www.freepik.com/photos/silver-foil)
 - "Negotiate" and "Vibrocentric" fonts are under [The Fontspring Desktop/Ebook Font End User License](docs/desktop-ebook-EULA-1.8.txt).
+
+## To DO
+* Language Menu
+* Input Method Menu
+* Shift
+  * Shift icon
+  * Selecting Text
+  * When the shift key is pressed once, make the next character uppercase.
+* After a word has been entered, deleting its characters should not change it

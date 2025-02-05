@@ -61,8 +61,8 @@ public class Hotkeys {
 		defaultKeys.put(SectionKeymap.ITEM_BACKSPACE, KeyEvent.KEYCODE_BACK);
 		if (
 			KeyCharacterMap.deviceHasKey(KeyEvent.KEYCODE_CLEAR)
-			|| KeyCharacterMap.deviceHasKey(KeyEvent.KEYCODE_DEL)
-			|| settings.isMainLayoutNumpad()
+				|| KeyCharacterMap.deviceHasKey(KeyEvent.KEYCODE_DEL)
+				|| settings.isMainLayoutNumpad()
 		) {
 			defaultKeys.put(SectionKeymap.ITEM_BACKSPACE, 0);
 		}
@@ -109,7 +109,7 @@ public class Hotkeys {
 	private void addIfDeviceHasKey(int code, String name, boolean allowHold) {
 		if (
 			(code == KeyEvent.KEYCODE_MENU && ViewConfiguration.get(context).hasPermanentMenuKey())
-			|| KeyCharacterMap.deviceHasKey(code)
+				|| KeyCharacterMap.deviceHasKey(code)
 		) {
 			add(code, name, allowHold);
 		}
@@ -212,5 +212,15 @@ public class Hotkeys {
 		addIfDeviceHasKey(KeyEvent.KEYCODE_VOLUME_MUTE, R.string.key_volume_mute, false);
 		addIfDeviceHasKey(KeyEvent.KEYCODE_VOLUME_DOWN, R.string.key_volume_down, false);
 		addIfDeviceHasKey(KeyEvent.KEYCODE_VOLUME_UP, R.string.key_volume_up, false);
+
+		/* Sonim XP3900 Key Codes */
+		addIfDeviceHasKey(291, "XP3900 SOS", false);
+		addIfDeviceHasKey(289, "XP3900 PTT", false);
+		// The left context button is the same as KeyEvent.KEYCODE_MENU.
+		addIfDeviceHasKey(KeyEvent.KEYCODE_MENU, "XP3900 Left Context Button", false);
+		addIfDeviceHasKey(294, "XP3900 Centre Context Button", false);
+		addIfDeviceHasKey(295, "XP3900 Right Context Button", false);
+		addIfDeviceHasKey(296, "XP3900 External Soft Key", false);
+		addIfDeviceHasKey(297, "XP3900 External Soft Key", false);
 	}
 }
